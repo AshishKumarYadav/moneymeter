@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for MoneyMeter, the offline expense tracker for Android. Your data stays on your phone and is never shared.">
+<title>MoneyMeter Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --bg: #f6f8fc;
+    --surface: #ffffff;
+    --ink: #1b2330;
+    --muted: #586174;
+    --line: #dde3ee;
+    --brand: #1a73e8;
+    --brand-soft: #e3edfd;
+    --good: #188038;
+    --good-soft: #e3f3e8;
+    --display: "Plus Jakarta Sans", "Segoe UI", system-ui, sans-serif;
+    --text: "Inter", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #11151c;
+      --surface: #1a2029;
+      --ink: #e8ecf3;
+      --muted: #a2abbb;
+      --line: #2c3442;
+      --brand: #8ab4f8;
+      --brand-soft: #1c2d4a;
+      --good: #81c995;
+      --good-soft: #1b3325;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #11151c;
+    --surface: #1a2029;
+    --ink: #e8ecf3;
+    --muted: #a2abbb;
+    --line: #2c3442;
+    --brand: #8ab4f8;
+    --brand-soft: #1c2d4a;
+    --good: #81c995;
+    --good-soft: #1b3325;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 16px/1.65 var(--text);
+    padding-inline: 20px;
+    padding-block: 40px 64px;
+  }
+  .page { max-width: 720px; margin: 0 auto; display: grid; gap: 28px; }
+
+  header { display: grid; gap: 14px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand svg { width: 44px; height: 44px; flex: none; }
+  .brand span { font: 800 20px/1 var(--display); letter-spacing: -0.02em; }
+  h1 {
+    font: 800 clamp(30px, 6vw, 42px)/1.1 var(--display);
+    letter-spacing: -0.03em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  .updated { color: var(--muted); font-size: 14px; margin: 0; }
+  .lede { font-size: 18px; margin: 0; max-width: 60ch; }
+
+  .promise {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 12px;
+  }
+  .promise div {
+    background: var(--good-soft);
+    border-radius: 16px;
+    padding: 16px 18px;
+    display: grid;
+    gap: 2px;
+  }
+  .promise strong { font: 700 16px/1.3 var(--display); color: var(--good); }
+  .promise p { margin: 0; font-size: 14px; color: var(--ink); }
+
+  section { display: grid; gap: 10px; }
+  h2 {
+    font: 700 21px/1.3 var(--display);
+    letter-spacing: -0.015em;
+    margin: 0;
+    padding-top: 8px;
+    border-top: 1px solid var(--line);
+    padding-block-start: 22px;
+  }
+  section p, section ul { margin: 0; max-width: 65ch; }
+  ul { padding-left: 20px; display: grid; gap: 6px; }
+
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; background: var(--surface); border-radius: 14px; overflow: hidden; }
+  th, td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font: 600 13px/1.4 var(--text); text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 600; white-space: nowrap; }
+
+  .contact {
+    background: var(--brand-soft);
+    border-radius: 16px;
+    padding: 18px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 16px;
+  }
+  .contact code { font: 600 16px/1.4 var(--text); color: var(--ink); user-select: all; }
+  .contact button {
+    font: 600 14px/1 var(--text);
+    color: var(--brand);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 9px 14px;
+    cursor: pointer;
+  }
+  .contact button:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+  footer { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="brand">
+      <svg viewBox="0 0 108 108" aria-hidden="true">
+        <rect width="108" height="108" rx="26" fill="#1A73E8"/>
+        <path d="M54,30 A24,24 0 1,1 30,54" fill="none" stroke="#fff" stroke-width="9"/>
+        <path d="M30,52 A24,24 0 0,1 52,30" fill="none" stroke="#FBBC04" stroke-width="9"/>
+        <path d="M46,44 H62 M46,50 H62 M50.5,44 C57.5,44 58.5,56 50.5,56 H46 M48.5,56 L58,66" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>MoneyMeter</span>
+    </div>
+    <h1>Privacy policy</h1>
+    <p class="updated">Last updated 29 September 2026</p>
+    <p class="lede">MoneyMeter is an expense tracker that works entirely on your phone. Your financial data is stored on your device and is never sent anywhere.</p>
+  </header>
+
+  <div class="promise" aria-label="Summary">
+    <div><strong>Stays on your phone</strong><p>Saved in a local database on your device only.</p></div>
+    <div><strong>Nothing is shared</strong><p>The app has no internet permission.</p></div>
+    <div><strong>No account</strong><p>No sign-up, no login, no profile.</p></div>
+  </div>
+
+  <section>
+    <h2>What the app reads</h2>
+    <ul>
+      <li><strong>SMS messages from banks and payment services</strong>, to find transactions: the amount, the card or account, the merchant and the reference number. Messages from people are skipped by checking the sender.</li>
+      <li><strong>Entries you add yourself</strong>: cash payments, notes, subscriptions and spending limits.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Where your data goes</h2>
+    <p>Nowhere. MoneyMeter has no internet permission, so it cannot send anything off your phone. There are no accounts, analytics, advertising or third-party SDKs that collect data.</p>
+    <p>Your data is kept in the app's private storage and is excluded from Android cloud backup and device-to-device transfer. Uninstalling the app deletes it.</p>
+  </section>
+
+  <section>
+    <h2>App updates</h2>
+    <p>When a new version is available, the Google Play Store app on your phone may offer it inside MoneyMeter. That check is made by Google Play, not by MoneyMeter, and does not include any of your data.</p>
+  </section>
+
+  <section>
+    <h2>Permissions</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Permission</th><th>Why it's needed</th></tr></thead>
+        <tbody>
+          <tr><td>Read and receive SMS</td><td>Find bank transactions, and check spending limits when a new one arrives</td></tr>
+          <tr><td>Notifications</td><td>Spending limit warnings and subscription renewal reminders</td></tr>
+          <tr><td>Run at startup</td><td>Schedule the daily renewal check again after the phone restarts</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>MoneyMeter is not directed at children under 13 and does not knowingly collect any information from them. It collects no personal information from anyone.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the new version will be posted on this page with a new "last updated" date.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact">
+      <code id="email">ashishhpidc@gmail.com</code>
+      <button type="button" id="copy">Copy email</button>
+    </div>
+  </section>
+
+  <footer>MoneyMeter · Offline expense tracker for Android</footer>
+</div>
+
+<script>
+  document.getElementById("copy").addEventListener("click", async (e) => {
+    const btn = e.currentTarget;
+    const email = document.getElementById("email");
+    try {
+      await navigator.clipboard.writeText(email.textContent);
+      btn.textContent = "Copied";
+    } catch {
+      const range = document.createRange();
+      range.selectNodeContents(email);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      btn.textContent = "Selected, press copy";
+    }
+    setTimeout(() => (btn.textContent = "Copy email"), 2000);
+  });
+</script>
+</body>
+</html>
